@@ -78,11 +78,11 @@ const router = new VueRouter({
 });
 
 
-//全局导航守卫
-router.beforeEach((to, from, next) => {
-  document.title = to.matched[0].meta.title;
-  next();
-});
+// //全局导航守卫
+// router.beforeEach((to, from, next) => {
+//   document.title = to.matched[0].meta.title;
+//   next();
+// });
 
 // 3.将router对象传入到Vue实例
 export default router
